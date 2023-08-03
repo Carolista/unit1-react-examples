@@ -6,7 +6,7 @@ export default class Header extends Component {
   render () {
     return (
       <header>
-        <h3>Garden Planning Tool</h3>
+        <h2>Garden Planning Tool</h2>
       </header>
     );
   }

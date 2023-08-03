@@ -1,7 +1,7 @@
 main {
   flex-direction: row;
   width: 100%;
-  margin-bottom: 100px;
+  margin: 10px 0 100px;
 }
 
 #left-column {

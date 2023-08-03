@@ -5,32 +5,32 @@ const Main = () => {
 
   let testPlants = [
     {
-      "id": 1,
-      "name": "Hyacinth",
-      "color": "blue",
-      "image": "hyacinth-blue.png",
-      "numAvailable": 8
+      id: 1,
+      name: "Hyacinth",
+      color: "blue",
+      image: "hyacinth-blue.png",
+      numAvailable: 8
     },
     {
-      "id": 2,
-      "name": "Tulip",
-      "color": "red",
-      "image": "tulip-red.png",
-      "numAvailable": 12
+      id: 2,
+      name: "Tulip",
+      color: "red",
+      image: "tulip-red.png",
+      numAvailable: 12
     },
     {
-      "id": 3,
-      "name": "Daffodil",
-      "color": "yellow",
-      "image": "daffodil-yellow.png",
-      "numAvailable": 16
+      id: 3,
+      name: "Daffodil",
+      color: "yellow",
+      image: "daffodil-yellow.png",
+      numAvailable: 16
     },  
   ];
 
   return (
     <main>
       <div id={styles["left-column"]}>
-        <h4>Available Plants</h4>
+        <h3>Available Plants</h3>
         <AvailablePlant 
           id={testPlants[0].id}
           name={testPlants[0].name}

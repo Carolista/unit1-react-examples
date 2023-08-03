@@ -1,4 +1,7 @@
 body {
+  background-image: url("./assets/images/bkg.jpg");
+  background-attachment: fixed;
+  font-family: "Karla", sans-serif;
   font-size: 14pt;
   font-weight: 400;
   padding: 0;
@@ -13,13 +16,16 @@ div {
   box-sizing: border-box;
 }
 
-h3 {
-  font-size: 24px;
+h2 {
+  font-family: "Unica One", cursive;
+  font-size: 32px;
+  margin: 0;
 }
 
-h4 {
+h3 {
   color: #508015;
-  font-size: 18px;
+  font-family: "Karla", sans-serif;
+  font-size: 24px;
   text-transform: uppercase;
   margin-top: 0;
   border-bottom: 2px solid #508015;
@@ -30,5 +36,5 @@ h4 {
   background-color: white;
   height: 100vh;
   width: 80vw;
-  margin: 0 auto;
+  margin: 0 5vw 0 15vw;
 }
