@@ -1,0 +1,11 @@
+main {
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+#left-column {
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+}

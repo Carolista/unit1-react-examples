@@ -1,4 +1,5 @@
 import AvailablePlant from "./AvailablePlant";
+import styles from "./Main.module.css";
 
 const Main = () => {
 
@@ -28,8 +29,8 @@ const Main = () => {
 
   return (
     <main>
-      <div id="left-column">
-        <h3>Available Plants</h3>
+      <div id={styles["left-column"]}>
+        <h4>Available Plants</h4>
         <AvailablePlant 
           id={testPlants[0].id}
           name={testPlants[0].name}
