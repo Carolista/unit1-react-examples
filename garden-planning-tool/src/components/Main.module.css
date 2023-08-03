@@ -9,3 +9,9 @@ main {
   width: 300px;
   padding: 20px;
 }
+
+#right-column {
+  flex-direction: column;
+  width: calc(100% - 300px);
+  padding: 20px;
+}

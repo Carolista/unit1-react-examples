@@ -1,0 +1,14 @@
+.flowerbed {
+  flex-direction: column;
+  padding: 16px;
+  gap: 20px;
+  border-color: #508015;
+  border-style: solid;
+  border-width: 2px 2px 2px 12px;
+}
+
+.plant-grid {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}

@@ -1,9 +1,11 @@
 const AvailablePlant = props => {
   
-  // Use deconstruction to avoid having to use props.id, props.name, etc
-  let { id, name, color, num } = props;
+  // TODO #2: Upgrade to display a card with image, chevron icons, etc. 
+  // TODO #3: Add event handlers to icons (just log something for now)
 
-  return <p id={id}>{name} - {color} - {num} available</p>;
+  let { id, name, color, numAvailable } = props.plant;
+
+  return <p id={id}>{name} - {color} - {numAvailable} available</p>;
 }
 
 export default AvailablePlant;

@@ -1,13 +1,68 @@
+/* Global CSS — use anywhere without importing */
+
 body {
+  background-image: url("./assets/images/bkg.jpg");
+  background-attachment: fixed;
+  font-family: "Karla", sans-serif;
+  font-size: 14pt;
+  font-weight: 400;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+div {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Unica One", cursive;
+  font-size: 32px;
+  margin: 0;
+}
+
+h3 {
+  color: #508015;
+  font-family: "Karla", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-top: 0;
+  border-bottom: 2px solid #508015;
+}
+
+h4 {
+  font-family: "Unica One", cursive;
+  font-size: 24px;
+  margin: 0;
+}
+
+img {
+  border-radius: 4px;
+}
+
+button {
+  background-color: #508015;
+  color: white;
+  margin-left: 6px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #67a11f;
+}
+
+.card {
+  padding: 4px;
+  margin-bottom: 10px;
+  border: 2px solid #eee;
+  border-radius: 6px;
+}
+
+.clickable {
+  cursor: pointer;
 }
