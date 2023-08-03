@@ -1,4 +1,4 @@
-# class-18-react-examples
+# unit1-react-examples
 
 Create new application with `create-react-app` for the class 18 beginning.
 
