@@ -31,20 +31,20 @@
   margin-right: 6px;
 }
 
-.fa-chevron-circle-left {
+.chevron-left {
   color: #ac0542;
   cursor: pointer;
 }
-.fa-chevron-circle-left:hover {
+.chevron-left:hover {
   color: #c90c52;
   transform: scale(1.1);
 }
 
-.fa-chevron-circle-right {
+.chevron-right {
   color: #427405;
   cursor: pointer;
 }
-.fa-chevron-circle-right:hover {
+.chevron-right:hover {
   color: #67a11f;
   transform: scale(1.1);
 }
