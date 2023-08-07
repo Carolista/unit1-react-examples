@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import SelectedPlant from './SelectedPlant';
 
 const StyledFlowerbed = styled.div`
   flex-direction: column;
@@ -17,19 +18,17 @@ const PlantGrid = styled.div`
 
 const Flowerbed = (props) => {
 
-  // TODO #5: Return JSX that displays either text saying no plants have been allocated or a series of SelectedPlant components
-  // if (props.selectedPlants) {
-  //   return <p>No plants allocated yet.</p>;
-  // } else {
-  //   return <p>Some plants...</p>;
-  // }
+  const selectedPlants = props.selectedPlants.map(plant => {
+    return <SelectedPlant key={plant.id} plant={plant} />;
+  });
+
   return (
     <StyledFlowerbed>
       <div>
         <h4>My Flowerbed</h4>
       </div>
-      {props.selectedPlants 
-        ? <p>Some flowers...</p> 
+      {selectedPlants 
+        ? <PlantGrid>{selectedPlants}</PlantGrid>
         : <p>Allocate a plant to get started!</p>
       }
     </StyledFlowerbed>

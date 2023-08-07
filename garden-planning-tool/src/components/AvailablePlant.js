@@ -1,22 +1,65 @@
-import styles from "./AvailablePlant.module.css";
 import { capitalize } from "../shared/utils";
+import styled from 'styled-components';
+
+const StyledPlant = styled.div`
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 6px;
+  max-height: 62px;
+`;
+
+const ImageAndText = styled.div`
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+`;
+
+const AmountText = styled.span`
+  color: #508015;
+  text-transform: uppercase;
+`;
+
+const ArrowGroup = styled.div`
+  align-items: center;
+  font-size: 1.4rem;
+  gap: 6px;
+  margin-right: 6px;
+`;
+
+const LeftChevron = styled.span`
+  color: #ac0542;
+  cursor: pointer;
+  &:hover {
+    color: #c90c52;
+    transform: scale(1.1);
+  }
+`;
+
+const RightChevron = styled.span`
+  color: #427405;
+  cursor: pointer;
+  &:hover {
+    color: #67a11f;
+    transform: scale(1.1);
+  }
+`;
 
 const AvailablePlant = props => {
 
-  let { id, name, color, image, numAvailable } = props.plant;
+  let { name, color, image, numAvailable } = props.plant;
 
   const handleReturnPlant = () => {
-    console.log(`Returning 1 ${color} ${name}.`)
+    console.log(`This button will return 1 ${color} ${name}.`)
 
   };
 
   const handleAllocatePlant = () => {
-    console.log(`Allocating 1 ${color} ${name}.`)
+    console.log(`This button will allocate 1 ${color} ${name}.`)
   };
 
   return (
-    <div id={id} className={`card ${styles["available-plant"]}`}>
-      <div className={styles["image-and-text"]}>
+    <StyledPlant className="card">
+      <ImageAndText>
         <img
           src={image}
           width="50px"
@@ -25,24 +68,24 @@ const AvailablePlant = props => {
         />
         <p>
           {name}, {capitalize(color)}<br /> 
-          <span className={styles["amount-text"]}>
+          <AmountText>
             {numAvailable} available
-          </span>
+          </AmountText>
         </p>
-      </div>
-      <div className={styles.arrows}>
-        <span
-          className={`fa fa-chevron-circle-left ${styles["chevron-left"]}`}
+      </ImageAndText>
+      <ArrowGroup>
+        <LeftChevron
+          className={"fa fa-chevron-circle-left"}
           title="Remove one plant from flowerbed"
           onClick={handleReturnPlant}
-        ></span>
-        <span
-          className={`fa fa-chevron-circle-right ${styles["chevron-right"]}`}
+        ></LeftChevron>
+        <RightChevron
+          className={"fa fa-chevron-circle-right"}
           title="Add one plant to flowerbed"
           onClick={handleAllocatePlant}
-        ></span>
-      </div>
-    </div>
+        ></RightChevron>
+      </ArrowGroup>
+    </StyledPlant>
   );
 }
 

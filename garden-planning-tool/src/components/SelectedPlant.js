@@ -15,7 +15,19 @@ const BigNum = styled.span`
 
 const SelectedPlant = (props) => {
 
-  // TODO #5: Use deconstruction to name properties of plant prop
+  let { name, color, image, numAllocated } = props.plant;
 
-  // TODO #5: Return JSX that displays a card representing the plant
+  return (
+    <StyledPlantCard className="card">
+      <img
+        src={image}
+        width="150px"
+        height="150px"
+        alt={`${color} ${name}`}
+      />
+      <BigNum>{numAllocated}</BigNum>
+    </StyledPlantCard>
+  );
 }
+
+export default SelectedPlant;
