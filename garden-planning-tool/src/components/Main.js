@@ -1,5 +1,25 @@
 import AvailablePlant from "./AvailablePlant";
-import styles from "./Main.module.css";
+import Flowerbed from "./Flowerbed";
+import styled from 'styled-components';
+
+const StyledMain = styled.main`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 10px 0 100px;
+`;
+
+const LeftCol = styled.div`
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+`;
+
+const RightCol = styled.div`
+  flex-direction: column;
+  width: calc(100% - 300px);
+  padding: 20px;
+`;
 
 const Main = () => {
 
@@ -58,12 +78,15 @@ const Main = () => {
   // TODO #4: Add right column below with Flowerbed component that has a selectedPlants prop — test passing an empty array and then testPlants2
 
   return (
-    <main>
-      <div id={styles["left-column"]}>
+    <StyledMain>
+      <LeftCol>
         <h3>Available Plants</h3>
         {availablePlants}
-      </div>
-    </main>
+      </LeftCol>
+      <RightCol>
+        <Flowerbed selectedPlants={[]} />
+      </RightCol>
+    </StyledMain>
   );
 };
 

@@ -15,7 +15,7 @@ const AvailablePlant = props => {
   };
 
   return (
-    <div id={id} className={`${styles.card} ${styles["available-plant"]}`}>
+    <div id={id} className={`card ${styles["available-plant"]}`}>
       <div className={styles["image-and-text"]}>
         <img
           src={image}
