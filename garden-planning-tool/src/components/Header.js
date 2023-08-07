@@ -12,7 +12,7 @@ const StyledHeader = styled.header`
 
 // Example of class-based component (older syntax)
 export default class Header extends Component {
-  render () {
+  render() {
     return (
       <StyledHeader>
         <h2>Garden Planning Tool</h2>

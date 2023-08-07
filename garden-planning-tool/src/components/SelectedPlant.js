@@ -13,9 +13,10 @@ const BigNum = styled.span`
   font-weight: 700;
 `;
 
-const SelectedPlant = (props) => {
+const SelectedPlant = props => {
 
   // TODO #7: Use deconstruction to name properties of plant prop
 
   // TODO #7: Return JSX that displays a card representing the plant
-}
+  
+};

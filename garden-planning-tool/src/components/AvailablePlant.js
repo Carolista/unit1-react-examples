@@ -44,14 +44,17 @@ const RightChevron = styled.span`
 `;
 
 const AvailablePlant = props => {
+  // TODO #3: Upgrade to display a card with image, chevron icons, etc.
 
-  
-  // TODO #3: Upgrade to display a card with image, chevron icons, etc. 
   // TODO #4: Add event handlers to icons (just log something for now)
 
-  let { id, name, color, numAvailable } = props.plant;
+  let { name, color, numAvailable } = props.plant;
 
-  return <p id={id}>{name} - {color} - {numAvailable} available</p>;
-}
+  return (
+    <p>
+      {name} - {color} - {numAvailable} available
+    </p>
+  );
+};
 
 export default AvailablePlant;

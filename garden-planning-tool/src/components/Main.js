@@ -1,4 +1,4 @@
-import AvailablePlant from "./AvailablePlant";
+import AvailablePlant from './AvailablePlant';
 import styled from 'styled-components';
 
 const StyledMain = styled.main`
@@ -21,7 +21,6 @@ const RightCol = styled.div`
 `;
 
 const Main = () => {
-
   let testPlants = [
     {
       id: 1,
@@ -56,7 +55,6 @@ const Main = () => {
 
   // TODO #2: Loop to produce multiple AvailablePlant components
 
-  
   // TODO #3: Upgrade content in AvailablePlant
   // TODO #4: Add event handlers in Available Plant
   // TODO #5: Add right column below with Flowerbed component that has a selectedPlants prop
@@ -65,7 +63,7 @@ const Main = () => {
 
   return (
     <main>
-      <div id={styles["left-column"]}>
+      <div id={styles['left-column']}>
         <h3>Available Plants</h3>
         <AvailablePlant plant={testPlants1[0]} />
         <AvailablePlant plant={testPlants1[1]} />

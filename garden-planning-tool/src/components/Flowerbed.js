@@ -15,7 +15,6 @@ const PlantGrid = styled.div`
   gap: 10px;
 `;
 
-const Flowerbed = (props) => {
-
+const Flowerbed = props => {
   // TODO #6: Return JSX that displays either text saying no plants have been allocated or a series of SelectedPlant components
-}
+};
