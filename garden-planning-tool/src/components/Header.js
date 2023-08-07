@@ -1,13 +1,22 @@
 import { Component } from 'react';
-import styles from "./Header.module.css";
+import styled from 'styled-components';
 
-// Example of class-based component (phasing out)
+const StyledHeader = styled.header`
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(#508015, #335b03);
+  color: white;
+  height: 60px;
+  padding: 0px 20px;
+`;
+
+// Example of class-based component (older syntax)
 export default class Header extends Component {
   render () {
     return (
-      <header>
+      <StyledHeader>
         <h2>Garden Planning Tool</h2>
-      </header>
+      </StyledHeader>
     );
   }
 }
