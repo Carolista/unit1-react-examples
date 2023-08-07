@@ -51,7 +51,10 @@ const Main = () => {
     },  
   ];
 
-  // TODO #1: Loop to produce multiple AvailablePlant components
+  let availablePlants = testPlants1.map(plant => {
+    return <AvailablePlant plant={plant} />;
+  });
+
   // TODOs #2 and #3: Go to AvailablePlant component and upgrade content
   // TODO #4: Add right column below with Flowerbed component that has a selectedPlants prop — test passing an empty array and then testPlants2
 
@@ -59,9 +62,7 @@ const Main = () => {
     <main>
       <div id={styles["left-column"]}>
         <h3>Available Plants</h3>
-        <AvailablePlant plant={testPlants1[0]} />
-        <AvailablePlant plant={testPlants1[1]} />
-        <AvailablePlant plant={testPlants1[2]} />
+        {availablePlants}
       </div>
     </main>
   );
