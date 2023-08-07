@@ -1,4 +1,5 @@
 import AvailablePlant from './AvailablePlant';
+import styles from './Main.module.css';
 import styled from 'styled-components';
 
 const StyledMain = styled.main`
@@ -65,9 +66,9 @@ const Main = () => {
     <main>
       <div id={styles['left-column']}>
         <h3>Available Plants</h3>
-        <AvailablePlant plant={testPlants1[0]} />
-        <AvailablePlant plant={testPlants1[1]} />
-        <AvailablePlant plant={testPlants1[2]} />
+        <AvailablePlant plant={testPlants[0]} />
+        <AvailablePlant plant={testPlants[1]} />
+        <AvailablePlant plant={testPlants[2]} />
       </div>
     </main>
   );
