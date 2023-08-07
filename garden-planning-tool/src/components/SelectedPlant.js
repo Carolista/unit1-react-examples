@@ -13,21 +13,15 @@ const BigNum = styled.span`
   font-weight: 700;
 `;
 
-const SelectedPlant = (props) => {
-
+const SelectedPlant = props => {
   let { name, color, image, numAllocated } = props.plant;
 
   return (
     <StyledPlantCard className="card">
-      <img
-        src={image}
-        width="150px"
-        height="150px"
-        alt={`${color} ${name}`}
-      />
+      <img src={image} width="150px" height="150px" alt={`${color} ${name}`} />
       <BigNum>{numAllocated}</BigNum>
     </StyledPlantCard>
   );
-}
+};
 
 export default SelectedPlant;

@@ -1,4 +1,4 @@
-import { capitalize } from "../shared/utils";
+import { capitalize } from '../shared/utils';
 import styled from 'styled-components';
 
 const StyledPlant = styled.div`
@@ -45,48 +45,38 @@ const RightChevron = styled.span`
 `;
 
 const AvailablePlant = props => {
-
   let { name, color, image, numAvailable } = props.plant;
 
   const handleReturnPlant = () => {
-    console.log(`This button will return 1 ${color} ${name}.`)
-
+    console.log(`This button will return 1 ${color} ${name}.`);
   };
 
   const handleAllocatePlant = () => {
-    console.log(`This button will allocate 1 ${color} ${name}.`)
+    console.log(`This button will allocate 1 ${color} ${name}.`);
   };
 
   return (
     <StyledPlant className="card">
       <ImageAndText>
-        <img
-          src={image}
-          width="50px"
-          height="50px"
-          alt={`${color} ${name}`}
-        />
+        <img src={image} width="50px" height="50px" alt={`${color} ${name}`} />
         <p>
-          {name}, {capitalize(color)}<br /> 
-          <AmountText>
-            {numAvailable} available
-          </AmountText>
+          {name}, {capitalize(color)}
+          <br />
+          <AmountText>{numAvailable} available</AmountText>
         </p>
       </ImageAndText>
       <ArrowGroup>
         <LeftChevron
-          className={"fa fa-chevron-circle-left"}
+          className={'fa fa-chevron-circle-left'}
           title="Remove one plant from flowerbed"
-          onClick={handleReturnPlant}
-        ></LeftChevron>
+          onClick={handleReturnPlant}></LeftChevron>
         <RightChevron
-          className={"fa fa-chevron-circle-right"}
+          className={'fa fa-chevron-circle-right'}
           title="Add one plant to flowerbed"
-          onClick={handleAllocatePlant}
-        ></RightChevron>
+          onClick={handleAllocatePlant}></RightChevron>
       </ArrowGroup>
     </StyledPlant>
   );
-}
+};
 
 export default AvailablePlant;
