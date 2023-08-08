@@ -17,7 +17,7 @@ const PlantGrid = styled.div`
 `;
 
 const Flowerbed = props => {
-  const selectedPlants = props.selectedPlants.map(plant => {
+  const plantsJSX = props.selectedPlants.map(plant => {
     return <SelectedPlant key={plant.id} plant={plant} />;
   });
 
@@ -26,8 +26,8 @@ const Flowerbed = props => {
       <div>
         <h4>My Flowerbed</h4>
       </div>
-      {selectedPlants ? (
-        <PlantGrid>{selectedPlants}</PlantGrid>
+      {props.selectedPlants.length ? (
+        <PlantGrid>{plantsJSX}</PlantGrid>
       ) : (
         <p>Allocate a plant to get started!</p>
       )}

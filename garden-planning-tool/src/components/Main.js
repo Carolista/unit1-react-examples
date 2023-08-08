@@ -63,7 +63,7 @@ const Main = () => {
         {availablePlants}
       </LeftCol>
       <RightCol>
-        <Flowerbed selectedPlants={testPlants} />
+        <Flowerbed selectedPlants={[]} />
       </RightCol>
     </StyledMain>
   );
