@@ -51,12 +51,10 @@ const AvailablePlant = props => {
 
   const handleReturnPlant = () => {
     console.log(`This button will return 1 ${color} ${name}.`);
-    props.returnPlant(props.plant);
   };
 
   const handleAllocatePlant = () => {
     console.log(`This button will allocate 1 ${color} ${name}.`);
-    props.allocatePlant(props.plant);
   };
 
   return (
