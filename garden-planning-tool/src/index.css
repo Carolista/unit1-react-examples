@@ -49,6 +49,7 @@ button {
   margin-left: 6px;
   border: none;
   border-radius: 4px;
+  height: 20px;
   cursor: pointer;
 }
 
@@ -63,6 +64,7 @@ button:hover {
   border-radius: 6px;
 }
 
-.clickable {
-  cursor: pointer;
+.unavailable {
+  filter: grayscale(100%);
+  opacity: 0.6;
 }

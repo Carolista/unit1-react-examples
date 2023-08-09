@@ -3,7 +3,7 @@
 #page-layout {
   flex-direction: column;
   background-color: white;
-  height: 100vh;
+  height: 100%;
   width: 80vw;
   margin: 0 5vw 0 15vw;
 }
