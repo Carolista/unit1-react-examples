@@ -47,8 +47,6 @@ const RightChevron = styled.span`
 const AvailablePlant = props => {
   let { name, color, image, numAvailable } = props.plant;
 
-  // TODO: Update handlers to remove and allocate plants, then remove console.log
-
   const handleReturnPlant = () => {
     console.log(`This button will return 1 ${color} ${name}.`);
     props.returnPlant(props.plant);

@@ -26,10 +26,8 @@ const PlantGrid = styled.div`
 
 const Flowerbed = props => {
 
-  // TODO: Create a state variable, flowerbedName, initialized to "My Flowerbed"
   const [ flowerbedName, setFlowerbedName ] = useState("My Flowerbed")
 
-  // TODO: Create a state variable, editing, initialized to false
   const [ editing, setEditing ] = useState(false);
 
   const plantsJSX = props.selectedPlants.map(plant => {
@@ -37,21 +35,17 @@ const Flowerbed = props => {
   });
 
   const handleNameChange = (event) => {
-    // TODO: Update flowerbedName with the value from the input field
     setFlowerbedName(event.target.value);
   };
 
   const handleOpenForm = () => {
-    // TODO: Update editing boolean
     setEditing(true);
   }
 
   const handleCloseForm = () => {
-    // TODO: Update editing boolean
     setEditing(false);
   }
 
-  // TODO: Add conditional rendering so that only one form shows at a time
   return (
     <StyledFlowerbed>
       {!editing && <StyledForm>
