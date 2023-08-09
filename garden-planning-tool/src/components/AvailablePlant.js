@@ -47,16 +47,20 @@ const RightChevron = styled.span`
 const AvailablePlant = props => {
   let { name, color, image, numAvailable } = props.plant;
 
+  // TODO: Update handlers to remove and allocate plants, then remove console.log
+
   const handleReturnPlant = () => {
     console.log(`This button will return 1 ${color} ${name}.`);
+    props.returnPlant(props.plant);
   };
 
   const handleAllocatePlant = () => {
     console.log(`This button will allocate 1 ${color} ${name}.`);
+    props.allocatePlant(props.plant);
   };
 
   return (
-    <StyledPlant className="card">
+    <StyledPlant className={`card ${numAvailable === 0 ? "unavailable" : ""}`}>
       <ImageAndText>
         <img src={image} width="50px" height="50px" alt={`${color} ${name}`} />
         <p>
